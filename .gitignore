@@ -1,0 +1,7 @@
+repos
+*.pkg.tar.zst
+*.pkg.tar.zst.sig
+pkg
+src
+add_package.sh
+deploy.sh

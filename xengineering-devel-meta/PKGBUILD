@@ -1,0 +1,32 @@
+
+# Maintainer: xengineering <mail2xengineering@protonmail.com>
+
+pkgname=xengineering-devel-meta
+pkgver=2.0.0
+pkgrel=1
+pkgdesc="Development Utilities"
+arch=('x86_64')
+url="xengineering.eu"
+license=('GPL')
+depends=(
+
+    'xengineering-base-meta'
+
+    # IDEs and basic tools
+    'ghex'
+
+    # utils
+    'gcc'
+    'make'
+
+    # microcontroller
+    'arm-none-eabi-binutils'
+    'arm-none-eabi-gcc'
+    'arm-none-eabi-gdb'
+    'arm-none-eabi-newlib'
+    'picocom'
+    'openocd'
+    'stlink'
+
+)
+

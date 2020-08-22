@@ -1,0 +1,47 @@
+
+# Maintainer: xengineering <mail2xengineering@protonmail.com>
+
+pkgname=xengineering-base-meta
+pkgver=2.0.0
+pkgrel=1
+pkgdesc="A basic Set of Software even suitable for small Systems"
+arch=('x86_64')
+url="xengineering.eu"
+license=('GPL')
+depends=(
+
+    # system basics
+    'linux-firmware'
+    'sudo'
+    'networkmanager'
+    'networkmanager-openvpn'
+    'ufw'
+    'htop'
+    'which'
+    'wget'
+    'tree'
+    'ntfs-3g'
+
+    # documentation
+    'man-db'
+    'man-pages'
+    'texinfo'
+
+    # editors
+    'nano'
+    'vi'
+    'vim'
+
+    # tools
+    'pwgen'
+    'rsync'
+    'openssh'
+    'screen'
+    'screenfetch'
+    'git'
+    
+    # for cross platform scripts
+    'python'
+
+)
+

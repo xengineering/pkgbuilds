@@ -1,0 +1,114 @@
+
+# Maintainer: xengineering <mail2xengineering@protonmail.com>
+
+pkgname=xengineering-desktop-meta
+pkgver=2.0.0
+pkgrel=1
+pkgdesc="Packages for a Desktop Arch Linux Installation"
+arch=('x86_64')
+url="xengineering.eu"
+license=('GPL')
+depends=(
+
+    'xengineering-base-meta'
+
+    # desktop basics
+    'cinnamon'
+    'cinnamon-translations'
+    'lightdm'
+    'lightdm-gtk-greeter'
+    'lightdm-gtk-greeter-settings'
+
+    # admin utils
+    'gnome-terminal'  # VERY important because otherwise you are left
+    'terminator'      # without any terminal access in your desktop!
+    'flatpak'
+
+    # misc
+    'bluez-utils'
+    'bluez-plugins'
+    'pavucontrol'
+    'pulseaudio-bluetooth'
+    'networkmanager-openconnect'
+
+    # browser
+    'firefox'
+
+    # desktop utils
+    'code'
+    'cheese'
+    'kleopatra'
+    'blueberry'
+    'gedit'
+    'evince'
+    'gnome-disk-utility'
+    'gnome-calculator'
+    'gnome-system-monitor'
+    'file-roller'
+    'baobab'
+    'flameshot'
+    'simplescreenrecorder'
+    'cups'
+    'celluloid'
+    'xournalpp'
+    'ristretto'
+    'keepassxc'
+
+    # additional
+    'papirus-icon-theme'
+    'virtualbox-guest-utils'
+    'redshift'
+
+    # xorg package group
+    'xf86-video-vesa'
+    'xorg-bdftopcf'
+    'xorg-docs'
+    'xorg-font-util'
+    'xorg-fonts-100dpi'
+    'xorg-fonts-75dpi'
+    'xorg-fonts-encodings'
+    'xorg-iceauth'
+    'xorg-luit'
+    'xorg-mkfontscale'
+    'xorg-server'
+    'xorg-server-common'
+    'xorg-server-devel'
+    'xorg-server-xephyr'
+    'xorg-server-xnest'
+    'xorg-server-xvfb'
+    'xorg-server-xwayland'
+    'xorg-sessreg'
+    'xorg-setxkbmap'
+    'xorg-smproxy'
+    'xorg-x11perf'
+    'xorg-xauth'
+    'xorg-xbacklight'
+    'xorg-xcmsdb'
+    'xorg-xcursorgen'
+    'xorg-xdpyinfo'
+    'xorg-xdriinfo'
+    'xorg-xev'
+    'xorg-xgamma'
+    'xorg-xhost'
+    'xorg-xinput'
+    'xorg-xkbcomp'
+    'xorg-xkbevd'
+    'xorg-xkbutils'
+    'xorg-xkill'
+    'xorg-xlsatoms'
+    'xorg-xlsclients'
+    'xorg-xmodmap'
+    'xorg-xpr'
+    'xorg-xprop'
+    'xorg-xrandr'
+    'xorg-xrdb'
+    'xorg-xrefresh'
+    'xorg-xset'
+    'xorg-xsetroot'
+    'xorg-xvinfo'
+    'xorg-xwd'
+    'xorg-xwininfo'
+    'xorg-xwud'
+
+)
+

@@ -1,0 +1,26 @@
+
+# Maintainer: xengineering <mail2xengineering@protonmail.com>
+
+pkgname=xengineering-network-meta
+pkgver=2.0.0
+pkgrel=1
+pkgdesc="Advanced Network Utilities"
+arch=('x86_64')
+url="xengineering.eu"
+license=('GPL')
+depends=(
+
+    'xengineering-base-meta'
+
+    'nmap'
+    'gnu-netcat'
+    'iperf'
+    'openvpn'
+    'rdesktop'
+    'tcpdump'
+    'traceroute'
+    'wireshark-cli'
+    'bind-tools'
+
+)
+
