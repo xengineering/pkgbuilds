@@ -1,9 +1,9 @@
 #!/bin/bash
 
 
-REPO=$1
-ARCH=$2
-PKG=$3
+REPO=$1  # provide repository name (e.g. 'xengineering') as first argument
+ARCH=$2  # provide architecture (e.g. 'aarch64' or 'x86_64') as second argument
+PKG=$3   # provide path to package (e.g. 'xengineering-base-meta/xengineering-base-meta-1.0.0-1-any.pkg.tar.zst') as third argument
 
 PREFIX="repos/$REPO/os/$ARCH"
 DATABASE="$PREFIX/$REPO.db"
