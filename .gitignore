@@ -3,5 +3,5 @@ repos
 *.pkg.tar.zst.sig
 pkg
 src
-add_package.sh
 deploy.sh
+old
