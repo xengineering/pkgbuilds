@@ -1,0 +1,37 @@
+pkgname=stlscope
+pkgver=0.1.0
+pkgrel=1
+pkgdesc='A simpel STL file viewer'
+arch=('x86_64')
+url="https://src.xengineering.eu/xengineering/$pkgname"
+license=('GPL3')
+makedepends=('go')
+depends=('licenses')
+source=("$url/archive/$pkgver.tar.gz")
+sha256sums=('fbaf650b05de9de6952a25e4b145c64c1ec86f488b483fd96dd669ef3c70e667')
+
+prepare(){
+  cd "$pkgname"
+  mkdir -p build/
+}
+
+build() {
+  cd "$pkgname"
+  export CGO_CPPFLAGS="${CPPFLAGS}"
+  export CGO_CFLAGS="${CFLAGS}"
+  export CGO_CXXFLAGS="${CXXFLAGS}"
+  export CGO_LDFLAGS="${LDFLAGS}"
+  export GOFLAGS="-buildmode=pie -trimpath -ldflags=-linkmode=external -mod=readonly -modcacherw"
+  go build -o build ./...
+}
+
+check() {
+  cd "$pkgname"
+  go test ./...
+}
+
+package() {
+  cd "$pkgname"
+  install -Dm755 build/$pkgname "$pkgdir"/usr/bin/$pkgname
+}
+
